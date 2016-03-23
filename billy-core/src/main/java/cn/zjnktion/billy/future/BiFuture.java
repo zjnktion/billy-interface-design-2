@@ -12,7 +12,7 @@ public interface BiFuture {
 
     BiFuture addListener(BiFutureListener<?> listener);
 
-    BiFuture removeListner(BiFutureListener<?> listener);
+    BiFuture removeListener(BiFutureListener<?> listener);
 
     BiContext getContext();
 

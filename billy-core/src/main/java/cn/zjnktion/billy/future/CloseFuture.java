@@ -13,7 +13,7 @@ public interface CloseFuture extends BiFuture {
 
     CloseFuture addListener(BiFutureListener<?> listener);
 
-    CloseFuture removeListner(BiFutureListener<?> listener);
+    CloseFuture removeListener(BiFutureListener<?> listener);
 
     CloseFuture await() throws InterruptedException;
 
