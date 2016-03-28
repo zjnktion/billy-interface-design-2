@@ -3,6 +3,7 @@ package cn.zjnktion.billy.future;
 import cn.zjnktion.billy.context.BiContext;
 import cn.zjnktion.billy.listener.BiFutureListener;
 
+import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -10,11 +11,15 @@ import java.util.concurrent.TimeUnit;
  */
 public interface BiFuture {
 
+    /**
+     * Returns a {@link BiContext} where the I/O operation associated with this future task take place
+     * @return
+     */
+    BiContext getContext();
+
     BiFuture addListener(BiFutureListener<?> listener);
 
     BiFuture removeListener(BiFutureListener<?> listener);
-
-    BiContext getContext();
 
     BiFuture await() throws InterruptedException;
 
