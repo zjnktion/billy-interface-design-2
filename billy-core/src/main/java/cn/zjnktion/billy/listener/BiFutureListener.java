@@ -7,6 +7,11 @@ import cn.zjnktion.billy.future.BiFuture;
  */
 public interface BiFutureListener<F extends BiFuture> extends BiListener {
 
-    void onCompleted(F future);
+    /**
+     * Invoked when the operation associated with the {@link BiFuture} has been completed.
+     *
+     * @param future  the source {@link BiFuture} which called this callback
+     */
+    void operationComplete(F future);
 
 }

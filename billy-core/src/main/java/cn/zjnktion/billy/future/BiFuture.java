@@ -6,6 +6,11 @@ import cn.zjnktion.billy.listener.BiFutureListener;
 import java.util.concurrent.TimeUnit;
 
 /**
+ * The design of {@link BiFuture} may change in future days.
+ * The promise pattern is better than this design pattern.
+ *
+ * todo change to the promise pattern
+ *
  * Created by zhengjn on 2016/3/23.
  */
 public interface BiFuture {
